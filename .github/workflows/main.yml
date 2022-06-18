@@ -31,9 +31,9 @@ jobs:
         
       - name: ssh-keygen 
         run: |
-           sudo mkdir ~/ansible
-           cd ~/ansible
-           ssh-keygen -t rsa -C "ansible" -f ~/ansible/.ssh/id_rsa
-           cat ~/ansible/.ssh/id_rsa.pub
+           #sudo mkdir ~/ansible
+           #cd ~/ansible
+           ssh-keygen -t rsa -C "ansible" -f ~/.ssh/id_rsa
+           cat ~/.ssh/id_rsa.pub
            pwd
         shell: bash
