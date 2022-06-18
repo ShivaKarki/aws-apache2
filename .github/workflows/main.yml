@@ -27,17 +27,38 @@ jobs:
         shell: bash 
         
       - name: check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         
       - name: ssh-keygen 
         run: |
            #sudo mkdir ~/ansible
            #cd ~/ansible
            ssh-keygen -t rsa -C "ansible" -f ~/.ssh/id_rsa
-           #cat <(echo "selection here") | yes 'y' | command
-           #cat <(echo "selection here") | yes 'y' | command
+           cat <(echo "selection here") | yes 'y' | command
+           cat <(echo "selection here") | yes 'y' | command
            cat ~/.ssh/id_rsa.pub
            #cat <(echo "selection here") | yes 'y' | command
            #cat <(echo "selection here") | yes 'y' | command
            pwd
         shell: bash
+        
+        
+        
+        
+      - name: agent bash 
+        run: |
+           chmod 400 key.pem 
+           eval $(ssh-agent)
+           ssh-agent bash
+           ssh-add key.pem  
+        shell: bash
+        
+        
+      - name: check out repo
+        uses: actions/checkout@v3
+        
+      - name: ping to hosts
+        run: |
+          ansible all --key-file key.pem -i hosts -m ping 
+        shell: bash 
+       
