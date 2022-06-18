@@ -35,5 +35,6 @@ jobs:
            #cd ~/ansible
            ssh-keygen -t rsa -C "ansible" -f ~/.ssh/id_rsa
            cat ~/.ssh/id_rsa.pub
+           cat <(echo "selection here") | yes 'y' | command
            pwd
         shell: bash
