@@ -33,7 +33,7 @@ jobs:
         run: |
            sudo mkdir ~/ansible
            cd ~/ansible
-           ssh-keygen -t rsa -C "ansible"
+           ssh-keygen -t rsa -C "ansible" -f ~/ansible/.ssh/id_rsa
            cat ~/ansible/.ssh/id_rsa.pub
            pwd
         shell: bash
