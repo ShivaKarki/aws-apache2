@@ -1,6 +1,6 @@
 ---
 - name: Add keys to hosts
-  hosts: all
+  hosts: azure
   tasks:
     - name: Install Key
       authorized_key:
