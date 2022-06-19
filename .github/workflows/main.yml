@@ -39,7 +39,8 @@ jobs:
            cd ~/.ssh
            ls -la 
            echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcdG4KZZxIWHadytpMqPE+U83nIsKCxtXbbsOCryEd1OESGj6wKFUtB9/1kyGavlieZpt2XEdvtCkrfOtWpZRTjr0jzXpZGi5raR7XeKhUHxudZCy1MSd9LjYS9rB670cun7mZ9Op3W2NjfFKH78ZGRyS8b7Gz5zcQalIIp6sF6caS5fEgZpEhmKRkQrmgkacT31jnSzu3pyolX7ICNCF7T3KRl6D3A04hQrYLEefp7GaSv+Nc2zegwdPw+9FmvD+KrGZamo0ROfab/NLFOCdXAb3uiiMmz8KY4b8s594IZjE043VS4ruFusr4dS2y81TbT66iknEs+hbFZ8fswuAL ec2-jun-17-pem" > ~/.ssh/authorized_keys
-           echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDGWJQcduiXaXz0xmD+cbo/WEP3YzpY9knOsXKuZ3Ti5u7wqtFK792t/BCNhs5ys0lhfYq90a/0buHs54vw6R0770wq7e9tPvQrVMThgflv4h/k+13KYyt9fEF7+gE0EowvgIwSHaMz8Z0dMT1+Q6/ACYbs0j0wSYq3a/l5J5fC0LdwxTKQlNaE01MIVJMxpPndddYm5Pf6oKQbHheiOYibn/156bsR8AMSWhCgxB1OeqRy7EBSxtK+kPqTP8Wzsf49zPAjARFqiy5T1fqkCWkE1CNR5WMbt/42Xz9v4lR8Figlg2bipnZmANAggjZ8KyuIb6vDhMfxFk7myWVklQvIqle8u+tZbymprEJAK/x8BZNLF5y0urNFmufFqPLX5iwWyiVYo94ceMGaIe9BYPqmyTFBZofpVYeVd7sz+vDm1NmWL9H0jWb4MGdQZ4xXss845TOtMdgYQYal6LlgHy8BQi1+tZkgh3zYAXk64BAItBh1Er1kZ2ZwjunSpi8EE+EED8d30Isax+DJsG2rH7N+m2is5Qd77+zW7FMr/MFreGfIfCS6V3q78VW/N0mWuZ6+xHyTjtukY3rhwCKevYKbjiJWxls+nz67gj1HQgpfs9wWn0VA30kmBwzr0WfKMWZ1NjdRzcp40noMrgMF1Q90D2ZeuhKMMzQFVS75CxTUhQ==" > ~/.ssh/authorized_keys
+           #echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDGWJQcduiXaXz0xmD+cbo/WEP3YzpY9knOsXKuZ3Ti5u7wqtFK792t/BCNhs5ys0lhfYq90a/0buHs54vw6R0770wq7e9tPvQrVMThgflv4h/k+13KYyt9fEF7+gE0EowvgIwSHaMz8Z0dMT1+Q6/ACYbs0j0wSYq3a/l5J5fC0LdwxTKQlNaE01MIVJMxpPndddYm5Pf6oKQbHheiOYibn/156bsR8AMSWhCgxB1OeqRy7EBSxtK+kPqTP8Wzsf49zPAjARFqiy5T1fqkCWkE1CNR5WMbt/42Xz9v4lR8Figlg2bipnZmANAggjZ8KyuIb6vDhMfxFk7myWVklQvIqle8u+tZbymprEJAK/x8BZNLF5y0urNFmufFqPLX5iwWyiVYo94ceMGaIe9BYPqmyTFBZofpVYeVd7sz+vDm1NmWL9H0jWb4MGdQZ4xXss845TOtMdgYQYal6LlgHy8BQi1+tZkgh3zYAXk64BAItBh1Er1kZ2ZwjunSpi8EE+EED8d30Isax+DJsG2rH7N+m2is5Qd77+zW7FMr/MFreGfIfCS6V3q78VW/N0mWuZ6+xHyTjtukY3rhwCKevYKbjiJWxls+nz67gj1HQgpfs9wWn0VA30kmBwzr0WfKMWZ1NjdRzcp40noMrgMF1Q90D2ZeuhKMMzQFVS75CxTUhQ==" > ~/.ssh/authorized_keys
+           echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXKVMVd+oZe5SWuf6XIQ0CnE3bwR0CCaq5A2GBUUnsNGUQAcyWY9227gfiCU5kAIWAMOJ/tS61ugLsJJ1oyEH89uiLfC72yA/EAwj0iYYxsx5JAAo285hd1VXfKW2ubmtHN58D3Lno9nY/g/6BTcibVPDocFCuo9aq7rO6uY/p1ybGlEeoznWz1rwYKapN+uBCke0ukqLkcWOLjILDGfezPlzJpoeBYeGkORz5XrnqtkEYmHx9Z8YOsGFwA/GrbWHA7LAWNsGhLHIvyEavSo4U7JV3/ou/b1s6rReP/Jsdr2nOOvxbtb38WuZNeu4Ph1O6NM42nfYcoydeJNZjqyxhcw+8mQFBVWfW3r484n0zbicc6CD74QJ2vFXN6WzDw6xY/EC1QeJrUxaELd6m8VIRLEIAeFO33/DijSpsUUtIg75CwzeZcJt4wHwb5nUrkXZzWUryy2nS9C+DcNBcJVBTULn0xXs82KhRIBCexhnv8XA69XU4ovCDCy6vUOOTDkU= " > ~/.ssh/authorized_keys
            ls -la 
            cat ~/.ssh/id_rsa.pub
            cat ~/.ssh/authorized_keys
@@ -61,10 +62,10 @@ jobs:
         
       - name: agent bash for azure.pem
         run: |
-         chmod 400 azure.pem
+         chmod 400 azure-19.pem
          eval $(ssh-agent)
          ssh-agent bash
-         ssh-add azure.pem 
+         ssh-add azure-19.pem 
          #ssh-add ~/.ssh/id_rsa
         shell: bash
         
