@@ -4,7 +4,9 @@
   tasks:
     - name: Install Key
       authorized_key:
-        user: ubuntu
+        user: 
+           - ubuntu
+           - azureuser
         state: present
         key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       ignore_errors: true
