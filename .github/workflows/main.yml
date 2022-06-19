@@ -49,13 +49,13 @@ jobs:
         
         
         
-#       - name: agent bash 
-#         run: |
-#            chmod 400 key.pem 
-#            eval $(ssh-agent)
-#            ssh-agent bash
-#            ssh-add key.pem  
-#         shell: bash
+      - name: agent bash 
+        run: |
+           chmod 400 key.pem 
+           eval $(ssh-agent)
+           ssh-agent bash
+           ssh-add key.pem  
+        shell: bash
         
 #       - name: agent bash 
 #         run: |
@@ -66,23 +66,23 @@ jobs:
 #         shell: bash
         
         
-#       - name: check out repo
-#         uses: actions/checkout@v3
+      - name: check out repo
+        uses: actions/checkout@v3
         
         
 #       - name: list all hosts
 #         run: |
 #            ansible all --list-hosts
         
-#       - name: ping to hosts
-#         run: |
-#           ansible all --key-file ~/.ssh/id_rsa -i hosts -m ping 
-#         shell: bash 
+      - name: ping to hosts
+        run: |
+          ansible all --key-file key.pem -i hosts -m ping 
+        shell: bash 
         
-#       - name: ping to hosts
-#         run: |
-#           ansible all --private-key key.pem -i hosts -m ping 
-#         shell: bash 
+      - name: ping to hosts
+        run: |
+          ansible all --private-key key.pem -i hosts -m ping 
+        shell: bash 
         
 #       - name: ssh copy to hosts 
 #         run: |
