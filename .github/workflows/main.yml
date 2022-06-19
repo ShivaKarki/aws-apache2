@@ -51,13 +51,31 @@ jobs:
            ssh-add key.pem  
         shell: bash
         
+      - name: agent bash 
+        run: |
+         chmod 400 ~/.ssh/id_rsa
+         eval $(ssh-agent)
+         ssh-agent bash
+         ssh-add ~/.ssh/id_rsa
+        shell: bash
+        
         
       - name: check out repo
         uses: actions/checkout@v3
         
+        
+      - name: list all hosts
+        run: |
+           ansible all --list-hosts
+        
       - name: ping to hosts
         run: |
-          ansible all --private-key key.pem  34.227.148.132 -m ping 
+          ansible all --key-file ~/.ssh/id_rsa -i hosts -m ping 
+        shell: bash 
+        
+      - name: ping to hosts
+        run: |
+          ansible all --private-key key.pem -i hosts -m ping 
         shell: bash 
         
       - name: ssh copy to hosts 
