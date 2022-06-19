@@ -93,5 +93,5 @@ jobs:
         
       - name: Run Playbook to Install apache2 server
         run: |
-           anisble-playbook  playbook.com 
+           ansible-playbook  playbook.yml
         shell: bash 
