@@ -57,7 +57,7 @@ jobs:
         
       - name: ping to hosts
         run: |
-          ansible all --private-key key.pem -i 34.227.148.132 -m ping 
+          ansible all --private-key key.pem  34.227.148.132 -m ping 
         shell: bash 
         
       - name: ssh copy to hosts 
