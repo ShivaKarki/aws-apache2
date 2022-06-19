@@ -89,3 +89,9 @@ jobs:
         run: |
             ansible-playbook ssh-copy.yml
         shell: bash 
+        
+        
+      - name: Run Playbook to Install apache2 server
+        run: |
+           anisble-playbook -i hosts playbook.com 
+        shell: bash 
