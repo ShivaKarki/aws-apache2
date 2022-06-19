@@ -36,7 +36,7 @@ jobs:
            ssh-keygen -t rsa -C "ansible" -f ~/.ssh/id_rsa
            ls -ld  ~/.ssh
            chmod 0700 ~/.ssh
-           cd ~/.ssh
+           #cd ~/.ssh
            ls -la 
           
            ansible azure1 --private-key azure-vm.pem -i hosts -m ping 
