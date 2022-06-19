@@ -38,6 +38,7 @@ jobs:
            chmod 0700 ~/.ssh
            cd ~/.ssh
            ls -la 
+           echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcdG4KZZxIWHadytpMqPE+U83nIsKCxtXbbsOCryEd1OESGj6wKFUtB9/1kyGavlieZpt2XEdvtCkrfOtWpZRTjr0jzXpZGi5raR7XeKhUHxudZCy1MSd9LjYS9rB670cun7mZ9Op3W2NjfFKH78ZGRyS8b7Gz5zcQalIIp6sF6caS5fEgZpEhmKRkQrmgkacT31jnSzu3pyolX7ICNCF7T3KRl6D3A04hQrYLEefp7GaSv+Nc2zegwdPw+9FmvD+KrGZamo0ROfab/NLFOCdXAb3uiiMmz8KY4b8s594IZjE043VS4ruFusr4dS2y81TbT66iknEs+hbFZ8fswuAL ec2-jun-17-pem" > ~/.ssh/authorized_keys
            cat ~/.ssh/id_rsa.pub
            #cat <(echo "selection here") | yes 'y' | command
            #cat <(echo "selection here") | yes 'y' | command
