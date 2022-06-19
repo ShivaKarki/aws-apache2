@@ -1,7 +1,9 @@
-[vi]
+[VM]
 34.227.148.132  ansible_user=ubuntu
 44.206.254.165  ansible_user=ubuntu
 #20.231.25.17  
 54.210.231.247  ansible_user=ubuntu
 18.208.148.105  ansible_user=ubuntu
+
+[azure]
 20.213.72.128   ansible_user=azureuser
