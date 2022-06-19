@@ -7,3 +7,4 @@
         user: ubuntu
         state: present
         key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      ignore_errors: true
