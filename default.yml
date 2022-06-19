@@ -1,6 +1,7 @@
 ---
 app_user: "root"
-http_host: "host"
+http_host: "VM"
+#http_host: "host"
 http_conf: "localhost.conf"
 http_port: "80"
 disable_default: true
