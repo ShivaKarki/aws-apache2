@@ -80,12 +80,12 @@ jobs:
         
       - name: ping to hosts
         run: |
-          ansible all --key-file key.pem -i hosts -m ping 
+          ansible VM --key-file key.pem -i hosts -m ping 
         shell: bash 
         
       - name: ping to hosts
         run: |
-          ansible all --private-key azure-19.pem -i hosts -m ping 
+          ansible azure --private-key azure-19.pem -i hosts -m ping 
         shell: bash 
         
       - name: ssh copy to hosts 
