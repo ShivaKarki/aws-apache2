@@ -85,7 +85,7 @@ jobs:
           ansible all --private-key key.pem -i hosts -m ping 
         shell: bash 
         
-#       - name: ssh copy to hosts 
-#         run: |
-#             ansible-playbook ssh-copy.yml
-#         shell: bash 
+      - name: ssh copy to hosts 
+        run: |
+            ansible-playbook ssh-copy.yml
+        shell: bash 
