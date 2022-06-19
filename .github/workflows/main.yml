@@ -38,7 +38,7 @@ jobs:
            chmod 0700 ~/.ssh
            #cd ~/.ssh
            ls -la 
-          
+           chmod 400 azure-vm.pem
            ansible azure1 --private-key azure-vm.pem -i hosts -m ping 
        
            ssh-copy-id -o UserknownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa.pub azureuser@20.231.5.85
