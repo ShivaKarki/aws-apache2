@@ -7,3 +7,6 @@
 
 [azure]
 20.213.72.128   ansible_user=azureuser
+
+[azure1]
+20.231.5.85   ansible_user=azureuser
