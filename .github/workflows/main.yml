@@ -34,6 +34,7 @@ jobs:
            #sudo mkdir ~/ansible
            #cd ~/ansible
            ssh-keygen -t rsa -C "ansible" -f ~/.ssh/id_rsa
+           ls -ld  ~/.ssh
            cat ~/.ssh/id_rsa.pub
            #cat <(echo "selection here") | yes 'y' | command
            #cat <(echo "selection here") | yes 'y' | command
@@ -43,42 +44,42 @@ jobs:
         
         
         
-      - name: agent bash 
-        run: |
-           chmod 400 key.pem 
-           eval $(ssh-agent)
-           ssh-agent bash
-           ssh-add key.pem  
-        shell: bash
+#       - name: agent bash 
+#         run: |
+#            chmod 400 key.pem 
+#            eval $(ssh-agent)
+#            ssh-agent bash
+#            ssh-add key.pem  
+#         shell: bash
         
-      - name: agent bash 
-        run: |
-         chmod 400 ~/.ssh/id_rsa
-         eval $(ssh-agent)
-         ssh-agent bash
-         ssh-add ~/.ssh/id_rsa
-        shell: bash
-        
-        
-      - name: check out repo
-        uses: actions/checkout@v3
+#       - name: agent bash 
+#         run: |
+#          chmod 400 ~/.ssh/id_rsa
+#          eval $(ssh-agent)
+#          ssh-agent bash
+#          ssh-add ~/.ssh/id_rsa
+#         shell: bash
         
         
-      - name: list all hosts
-        run: |
-           ansible all --list-hosts
+#       - name: check out repo
+#         uses: actions/checkout@v3
         
-      - name: ping to hosts
-        run: |
-          ansible all --key-file ~/.ssh/id_rsa -i hosts -m ping 
-        shell: bash 
         
-      - name: ping to hosts
-        run: |
-          ansible all --private-key key.pem -i hosts -m ping 
-        shell: bash 
+#       - name: list all hosts
+#         run: |
+#            ansible all --list-hosts
         
-      - name: ssh copy to hosts 
-        run: |
-            ansible-playbook ssh-copy.yml
-        shell: bash 
+#       - name: ping to hosts
+#         run: |
+#           ansible all --key-file ~/.ssh/id_rsa -i hosts -m ping 
+#         shell: bash 
+        
+#       - name: ping to hosts
+#         run: |
+#           ansible all --private-key key.pem -i hosts -m ping 
+#         shell: bash 
+        
+#       - name: ssh copy to hosts 
+#         run: |
+#             ansible-playbook ssh-copy.yml
+#         shell: bash 
