@@ -38,7 +38,11 @@ jobs:
            chmod 0700 ~/.ssh
            cd ~/.ssh
            ls -la 
+          
+           ansible azure1 --private-key azure-vm.pem -i hosts -m ping 
+       
            ssh-copy-id -o UserknownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa.pub azureuser@20.231.5.85
+           
            #ls -ld  ~/.ssh
            #echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcdG4KZZxIWHadytpMqPE+U83nIsKCxtXbbsOCryEd1OESGj6wKFUtB9/1kyGavlieZpt2XEdvtCkrfOtWpZRTjr0jzXpZGi5raR7XeKhUHxudZCy1MSd9LjYS9rB670cun7mZ9Op3W2NjfFKH78ZGRyS8b7Gz5zcQalIIp6sF6caS5fEgZpEhmKRkQrmgkacT31jnSzu3pyolX7ICNCF7T3KRl6D3A04hQrYLEefp7GaSv+Nc2zegwdPw+9FmvD+KrGZamo0ROfab/NLFOCdXAb3uiiMmz8KY4b8s594IZjE043VS4ruFusr4dS2y81TbT66iknEs+hbFZ8fswuAL ec2-jun-17-pem" > ~/.ssh/authorized_keys
            #echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDGWJQcduiXaXz0xmD+cbo/WEP3YzpY9knOsXKuZ3Ti5u7wqtFK792t/BCNhs5ys0lhfYq90a/0buHs54vw6R0770wq7e9tPvQrVMThgflv4h/k+13KYyt9fEF7+gE0EowvgIwSHaMz8Z0dMT1+Q6/ACYbs0j0wSYq3a/l5J5fC0LdwxTKQlNaE01MIVJMxpPndddYm5Pf6oKQbHheiOYibn/156bsR8AMSWhCgxB1OeqRy7EBSxtK+kPqTP8Wzsf49zPAjARFqiy5T1fqkCWkE1CNR5WMbt/42Xz9v4lR8Figlg2bipnZmANAggjZ8KyuIb6vDhMfxFk7myWVklQvIqle8u+tZbymprEJAK/x8BZNLF5y0urNFmufFqPLX5iwWyiVYo94ceMGaIe9BYPqmyTFBZofpVYeVd7sz+vDm1NmWL9H0jWb4MGdQZ4xXss845TOtMdgYQYal6LlgHy8BQi1+tZkgh3zYAXk64BAItBh1Er1kZ2ZwjunSpi8EE+EED8d30Isax+DJsG2rH7N+m2is5Qd77+zW7FMr/MFreGfIfCS6V3q78VW/N0mWuZ6+xHyTjtukY3rhwCKevYKbjiJWxls+nz67gj1HQgpfs9wWn0VA30kmBwzr0WfKMWZ1NjdRzcp40noMrgMF1Q90D2ZeuhKMMzQFVS75CxTUhQ==" > ~/.ssh/authorized_keys
