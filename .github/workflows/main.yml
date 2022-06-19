@@ -35,6 +35,9 @@ jobs:
            #cd ~/ansible
            ssh-keygen -t rsa -C "ansible" -f ~/.ssh/id_rsa
            ls -ld  ~/.ssh
+           chmod 0700 ~/.ssh
+           cd ~/.ssh
+           ls -la 
            cat ~/.ssh/id_rsa.pub
            #cat <(echo "selection here") | yes 'y' | command
            #cat <(echo "selection here") | yes 'y' | command
